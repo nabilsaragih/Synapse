@@ -3,7 +3,7 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from api.model.inference import Model
 
-model = Model.from_path('api/model/garden/iris_dnn.tflite')
+model = Model.from_path('api/model/garden/mnist_cnn.h5')
 
 @csrf_exempt
 def predict(request):
